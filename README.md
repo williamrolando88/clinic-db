@@ -1,7 +1,8 @@
-# curriculum-databases-projects-template
+# Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+This new database contains tables following the given schema below:
+
+![schema](https://raw.githubusercontent.com/microverseinc/curriculum-databases/main/db-structure/images/clinic_diagram.png?token=GHSAT0AAAAAABRV2NAPEQOI7FLFAVRARLHUYQ6KSLQ)
 
 ## 📚 Getting Started
 
@@ -19,6 +20,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@WillyMorales93](https://twitter.com/WillyMorales93)
 - LinkedIn: [William Morales](https://www.linkedin.com/in/william-rolando-morales/)
 
+👤 **Yigit Mersin**
+
+- GitHub: [@ygtmrsn](https://github.com/ygtmrsn)
+- Twitter: [@ygtmrsn](https://twitter.com/ygtmrsn)
+- LinkedIn: [yigitmersin](linkedin.com/in/yigitmersin)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -29,17 +36,17 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## 👍 Credits
+<!-- ## 👍 Credits
 
 GUI & Graphic Design: Nelson Sakwa
 
-- Behance: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+- Behance: [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) -->
 
 ## 📝 License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2022 William Morales
+Copyright (c) 2022 William Morales, Yigit Mersin
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
