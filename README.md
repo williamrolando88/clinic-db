@@ -22,9 +22,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 👤 **Yigit Mersin**
 
-- GitHub: [@github](https://github.com/ygtmrsn)
-- LinkedIn: [@linkedIn](linkedin.com/in/yigitmersin)
-- Twitter: [@twitter](https://twitter.com/ygtmrsn)
+- GitHub: [@ygtmrsn](https://github.com/ygtmrsn)
+- Twitter: [@ygtmrsn](https://twitter.com/ygtmrsn)
+- LinkedIn: [yigitmersin](linkedin.com/in/yigitmersin)
 
 ## 🤝 Contributing
 
