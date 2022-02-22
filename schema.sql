@@ -1,6 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 
-
+/* Create base tables */
 CREATE TABLE patients (
   id SERIAL NOT NULL PRIMARY KEY,
   name VARCHAR(128) NOT NULL,
@@ -37,18 +37,7 @@ CREATE TABLE treatments (
   name VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE medical_treatment (
-  medical_history_id INT NOT NULL,
-  treatment_id INT NOT NULL,
-  PRIMARY KEY (medical_history_id, treatment_id),
-  CONSTRAINT medical_history_fk
-    FOREIGN KEY (medical_history_id)
-    REFERENCES medical_histories(id),
-  CONSTRAINT treatment_fk
-    FOREIGN KEY(treatment_id)
-    REFERENCES treatments(id)
-);
-
+/* Create foreign keys */
 ALTER TABLE medical_histories
   ADD CONSTRAINT patient_id_fk
   FOREIGN KEY (patient_id)
@@ -64,8 +53,26 @@ ALTER TABLE invoice_items
   FOREIGN KEY (invoice_id)
   REFERENCES invoices(id);
 
-ALTER TABLE
-clinic_db=# ALTER TABLE invoice_items
+ALTER TABLE invoice_items
   ADD CONSTRAINT treatments_fk
   FOREIGN KEY (treatment_id)
   REFERENCES treatments(id);
+
+/* Create many to many foreign handler */
+CREATE TABLE medical_treatment (
+  medical_history_id INT NOT NULL,
+  treatment_id INT NOT NULL,
+  PRIMARY KEY (medical_history_id, treatment_id),
+  CONSTRAINT medical_history_fk
+    FOREIGN KEY (medical_history_id)
+    REFERENCES medical_histories(id),
+  CONSTRAINT treatment_fk
+    FOREIGN KEY(treatment_id)
+    REFERENCES treatments(id)
+);
+
+/* Create index to foreign keys */
+CREATE INDEX patient_id ON medical_histories (patient_id ASC);
+CREATE INDEX medical_history_id ON invoices (medical_history_id ASC);
+CREATE INDEX invoice_id ON invoice_items (invoice_id ASC);
+CREATE INDEX treatment_id ON invoice_items (treatment_id ASC);
